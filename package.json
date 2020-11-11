@@ -23,8 +23,8 @@
     "purge:css": "cross-env NODE_ENV=production postcss src/tailwind.css -o src/index.css",
     "build:css": "postcss src/tailwind.css -o src/index.css",
     "watch:css": "postcss src/tailwind.css -o src/index.css -w",
-    "start": "npm run build:css && serve -s build",
-    "build": "npm run purge:css && react-scripts build",
+    "start": "serve -s build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -47,6 +47,6 @@
     "autoprefixer": "^9.8.0",
     "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
-    "postcss-cli": "^7.1.1"
+    "postcss-cli": "^7.1.2"
   }
 }
