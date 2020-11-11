@@ -20,9 +20,6 @@
     "yup": "^0.29.3"
   },
   "scripts": {
-    "purge:css": "cross-env NODE_ENV=production postcss src/tailwind.css -o src/index.css",
-    "build:css": "postcss src/tailwind.css -o src/index.css",
-    "watch:css": "postcss src/tailwind.css -o src/index.css -w",
     "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
