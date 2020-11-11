@@ -15,6 +15,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-guards": "^1.0.2",
     "react-scripts": "^3.4.3",
+    "serve": "^11.3.2",
     "tailwindcss": "^1.4.6",
     "yup": "^0.29.3"
   },
@@ -22,7 +23,7 @@
     "purge:css": "cross-env NODE_ENV=production postcss src/tailwind.css -o src/index.css",
     "build:css": "postcss src/tailwind.css -o src/index.css",
     "watch:css": "postcss src/tailwind.css -o src/index.css -w",
-    "start": "npm run build:css && react-scripts start",
+    "start": "npm run build:css && serve -s build",
     "build": "npm run purge:css && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
