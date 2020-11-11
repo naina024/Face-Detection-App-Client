@@ -28,7 +28,7 @@ const Signup = ({loadUser, onRouteChange}) => {
                         validationSchema={signupSchema}
                         onSubmit={(values) => {
                             if (values.password === values.confirm_password){    
-                                fetch('http://localhost:3001/register', {
+                                fetch('https://boiling-depths-83144.herokuapp.com/register', {
                                     method: 'post',
                                     headers: {'Content-Type': 'application/json'},
                                     body: JSON.stringify({

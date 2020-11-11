@@ -81,10 +81,7 @@ const Dashboard = () => {
     function onSubmit() {
         setImageUrl(input);
         var faceBox = [];
-        // app.models
-        //     .predict(Clarifai.FACE_DETECT_MODEL, input)  // error : "imageUrl" inplace of "input" gives bad request (advance topic)
-        
-            fetch('http://localhost:3001/imageurl',{
+            fetch('https://boiling-depths-83144.herokuapp.com/imageurl',{
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
@@ -100,7 +97,7 @@ const Dashboard = () => {
                     faceBox.push(calculateFaceLocation(response.outputs[0].data.regions[i]));
                 }
                 if (response){
-                    fetch('http://localhost:3001/image',{
+                    fetch('https://boiling-depths-83144.herokuapp.com/image',{
                         method: 'put',
                         headers: {'Content-Type': 'application/json'},
                         body: JSON.stringify({

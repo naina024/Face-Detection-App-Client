@@ -3,7 +3,6 @@ import { Form, Formik } from 'formik';
 import Button from '../Button/Button';
 import * as yup from 'yup';
 import Input from '../Input/Input';
-import ForgotPassword from '../ForgotPassword/ForgotPassword';
 
 
 const Login = ({loadUser, onRouteChange}) => {
@@ -24,7 +23,7 @@ const Login = ({loadUser, onRouteChange}) => {
                         validationSchema={loginSchema}
                         onSubmit={(values) => {
                             console.log('logged in');
-                            fetch('http://localhost:3001/signin',{
+                            fetch('https://boiling-depths-83144.herokuapp.com/signin',{
                                 method: 'post',
                                 headers: {'Content-Type': 'application/json'},
                                 body: JSON.stringify({
@@ -69,7 +68,6 @@ const Login = ({loadUser, onRouteChange}) => {
 
                                     <Button btn_name='Login' />
 
-                                    {/* <ForgotPassword /> */}
                                 </div>
                             </Form>
                         )}
