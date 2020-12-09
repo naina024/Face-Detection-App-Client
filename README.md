@@ -1,11 +1,18 @@
-Test links -
+## Test links -
 https://www.refinery29.com/images/8449109.jpg
 https://randomuser.me/api/portraits/men/32.jpg
 https://goop.com/app/uploads/2015/08/9-Best-Clean-Face-Oils-TLP-MANI-0100_Magdalena-Niziol-The-Licensing-Project.jpg
 https://billetto.co.uk/blog/wp-content/uploads/2019/07/nicholas-green-nPz8akkUmDI-unsplash-e1563462058230.jpg
 https://i2-prod.mirror.co.uk/incoming/article14334083.ece/ALTERNATES/s615/3_Beautiful-girl-with-a-gentle-smile.jpg
 
-This project was bootstrapped with [Create React Tailwind App](https://github.com/gigincg/create-react-tailwind-app).
+## TODO : improvements
+- router
+- email OTP verification
+- sessions
+- local images
+- additional features in UI for admin account
+
+This [project](https://facedetectng.herokuapp.com/) was bootstrapped with [Create React Tailwind App](https://github.com/gigincg/create-react-tailwind-app).
 
 ## Available Scripts
 
