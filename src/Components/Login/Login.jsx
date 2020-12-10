@@ -42,7 +42,6 @@ const Login = ({loadUser, onRouteChange}) => {
                                 }
                             })
                             .catch(error => console.log('not found: ', error))
-
                         }}
                     >
                         {() => (
@@ -74,7 +73,6 @@ const Login = ({loadUser, onRouteChange}) => {
                     </Formik>
                 </div>
             </div>
-
             <div className={'flex justify-center'}>
                     <p 
                     style={{'fontFamily': 'Poppins'}}
