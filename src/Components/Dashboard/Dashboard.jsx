@@ -81,7 +81,7 @@ const Dashboard = () => {
     function onSubmit() {
         setImageUrl(input);
         var faceBox = [];
-            fetch('https://boiling-depths-83144.herokuapp.com/imageurl',{
+            fetch('LINK_YOUR_SERVER',{
                 method: 'post',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
