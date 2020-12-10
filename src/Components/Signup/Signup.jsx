@@ -93,14 +93,14 @@ const Signup = ({loadUser, onRouteChange}) => {
                                             placeholder={'enter password'}
                                         />
                                     </div>
-
+                                    
                                     <Button btn_name='Sign up' />
+                                    
                                 </div>
                             </Form>
                         )}
                     </Formik>
                 </div>
-
                 <div className={'flex justify-center'}>
                     <p 
                     style={{'fontFamily': 'Poppins'}}
