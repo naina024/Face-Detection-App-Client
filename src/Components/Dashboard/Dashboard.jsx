@@ -90,7 +90,6 @@ const Dashboard = () => {
             })
             .then(response => response.json())
         	.then(response => {
-                // console.log('faces : ',response.outputs[0].data.regions.length, response);
                 var number_of_faces = response.outputs[0].data.regions.length;
                 for(var i = 0; i<number_of_faces; i++) 
                 {
