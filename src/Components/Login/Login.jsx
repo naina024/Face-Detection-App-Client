@@ -23,7 +23,7 @@ const Login = ({loadUser, onRouteChange}) => {
                         validationSchema={loginSchema}
                         onSubmit={(values) => {
                             console.log('logged in');
-                            fetch('https://boiling-depths-83144.herokuapp.com/signin',{
+                            fetch('LINK_YOUR_SERVER',{
                                 method: 'post',
                                 headers: {'Content-Type': 'application/json'},
                                 body: JSON.stringify({
